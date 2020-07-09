@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+<div class="contact">
+    <h1> Contact Me! </h1>
+</div>
+</body>
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="contact">
+        <h1>Aidan Curley:</h1>
+    <p1>Phone: (408)834-3889</p1>
+    <p2>Email: aidanjosephcurley@gmail.com</p2>
+    </div>
+{% endblock %}
+</html>

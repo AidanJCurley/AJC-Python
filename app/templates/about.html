@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+<div class="about">
+    <h1>About Page</h1>
+</div>
+</body>
+{% extends "layout.html" %}
+{% block content %}
+   <div class="about">
+     <h1>About Aidan</h1>
+     <p>Student performer, interests in programming and art.</p>
+   </div>
+ {% endblock %}
+</html>
