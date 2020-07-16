@@ -102,7 +102,7 @@ def login():
             session.clear()
             # uses cookies with session, a dict that stores user id data
             session['user_id'] = user['id']
-            return redirect(url_for('auth.login'))
+            return redirect(url_for('index'))
     return render_template('auth/login.html')
 
 
